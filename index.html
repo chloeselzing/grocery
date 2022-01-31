@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Groceries</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-dark bg-primary">
+            <div class="container">
+                <h1>My grocery store</h1>
+                <form class="d-flex">
+                    <input id="filter" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                </form>
+            </div>
+          </nav>
+    </header>
+     
+   
+<div class="container" style="margin-top: 10px;">
+    <div id="main" class="card card-body">
+      <h2 class="title">Add Groceries</h2>
+      <form id="addForm" class="form-inline mb-2">
+          <input id="new" type="text" class="form-control mr-2" placeholder="New Groceries" style="width: 200px; margin-bottom: 10px;" >
+          <input type="submit" class="btn btn-dark" 
+          value="Submit" >
+      </form>
+      <div><h3>Groceries</h3></div>
+      <div class="card" style="width: 67rem;">
+        <ul id="grocery" class="list-group list-group-flush">
+          <li class="list-group-item" style="display: flex; justify-content: space-between;">Item-1
+            <button class="btn btn-danger me-md-2 delete" type="button">X</button>
+          </li>
+          <li class="list-group-item" style="display: flex; justify-content: space-between;">Item-2
+            <button class="btn btn-danger me-md-2 delete" type="button">X</button>
+          </li>
+          <li class="list-group-item" style="display: flex; justify-content: space-between;">Item-3
+            <button class="btn btn-danger me-md-2 delete" type="button">X</button>
+          </li>
+          <li class="list-group-item" style="display: flex; justify-content: space-between;">Item-4
+            <button class="btn btn-danger me-md-2 delete" type="button">X</button>
+          
+        </li>    
+        </ul>
+        
+      </div>
+    </div>
+</div>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="main.js"></script>
+</body>
+</html>
